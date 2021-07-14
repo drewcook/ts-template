@@ -1,36 +1,37 @@
 {
-  "name": "ts-battleship-server",
-  "version": "1.0.0",
-  "description": "The backend for ts-battleship",
-  "main": "dist/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start:build": "tsc -w",
-    "start:run": "nodemon dist/index.js",
-    "start": "concurrently npm:start:*",
-		"prettier": "npx prettier --config ./prettier.config.js **/*.* --check",
-		"prettier:fix": "npx prettier --config ./prettier.config.js **/*.* --write"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/drewcook/ts-battleship.git"
-  },
-  "keywords": [
-    "typescript",
-    "battleship"
-  ],
-  "author": "Drew Cook",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/drewcook/ts-battleship/issues"
-  },
-  "homepage": "https://github.com/drewcook/ts-battleship#readme",
-  "dependencies": {
-    "concurrently": "^6.2.0",
-    "nodemon": "^2.0.12"
-  },
-  "devDependencies": {
-    "altheajs-prettier-config": "^1.1.4",
-    "prettier": "2.3.2"
-  }
+	"name": "ts-battleship-server",
+	"version": "1.0.0",
+	"description": "The backend for ts-battleship",
+	"main": "dist/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start:build": "tsc -w",
+		"start:run": "nodemon dist/index.js",
+		"start": "concurrently npm:start:*",
+		"format:check": "npx prettier ./**/* --check",
+		"format:fix": "npx prettier .**/* --write"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/drewcook/ts-battleship.git"
+	},
+	"keywords": [
+		"typescript",
+		"battleship"
+	],
+	"author": "Drew Cook",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/drewcook/ts-battleship/issues"
+	},
+	"homepage": "https://github.com/drewcook/ts-battleship#readme",
+	"prettier": "altheajs-prettier-config",
+	"dependencies": {
+		"concurrently": "^6.2.0",
+		"nodemon": "^2.0.12"
+	},
+	"devDependencies": {
+		"altheajs-prettier-config": "^1.2.0",
+		"prettier": "2.3.2"
+	}
 }
