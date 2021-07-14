@@ -1,5 +1,5 @@
 interface IProgram {
-	run(): void;
+	run(): void
 }
 
 class Program implements IProgram {
